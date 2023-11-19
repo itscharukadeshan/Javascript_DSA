@@ -1,13 +1,13 @@
 /** @format */
 
-// Case inSensitive
+// * Case inSensitive
 
 const CountLetters = (str, letter) => {
   let count = 0;
   let string = str.toLowerCase();
   let letterInLowercase = letter.toLowerCase();
 
-  // Strings have an length arrays
+  // !  Strings have an .length method likes arrays
 
   for (let i = 0; i < string.length; i++) {
     if (string[i] === letterInLowercase) {
@@ -21,7 +21,7 @@ console.log(CountLetters("My Name", "M"));
 console.log(CountLetters("My Name", "a"));
 console.log(CountLetters("My Name", "m"));
 
-// Case Sensitive
+// * Case Sensitive
 
 /*
 
