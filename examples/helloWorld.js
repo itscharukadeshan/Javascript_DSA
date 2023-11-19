@@ -4,6 +4,6 @@ function helloWorld() {
   return "Hello world ..!";
 }
 
-const result = helloWorld();
+const result = console.log(helloWorld());
 
-console.log(result);
+
