@@ -14,3 +14,5 @@ const CountLetters = (str, letter) => {
 };
 
 console.log(CountLetters("My Name", "M"));
+console.log(CountLetters("My Name", "a"));
+console.log(CountLetters("My Name", "m"));
