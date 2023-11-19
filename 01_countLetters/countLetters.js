@@ -1,8 +1,8 @@
 /** @format */
 
-// * Case inSensitive
+// ? Case inSensitive
 
-const CountLetters = (str, letter) => {
+const countLetters = (str, letter) => {
   let count = 0;
   let string = str.toLowerCase();
   let letterInLowercase = letter.toLowerCase();
@@ -17,15 +17,25 @@ const CountLetters = (str, letter) => {
   return `Letter ${letter} is present ${count} times in ${str}`;
 };
 
-console.log(CountLetters("My Name", "M"));
-console.log(CountLetters("My Name", "a"));
-console.log(CountLetters("My Name", "m"));
+// ? Using split method | Case InSensitive
 
-// * Case Sensitive
+/*
+const countLetters = (str, letter) => {
+  let stringInLowercase = str.toLowerCase();
+  let letterInLowercase = letter.toLowerCase();
+  let string = stringInLowercase.split(letterInLowercase);
+
+  const result = string.length - 1;
+
+  return result;
+};
+*/
+
+// ? Case Sensitive
 
 /*
 
-const CountLetters = (str, letter) => {
+const countLetters = (str, letter) => {
   let count = 0;
   let string = str;
 
@@ -37,8 +47,26 @@ const CountLetters = (str, letter) => {
   return `Letter ${letter} is present ${count} times in ${str}`;
 };
 
-console.log(CountLetters("My Name", "M"));
-console.log(CountLetters("My Name", "a"));
-console.log(CountLetters("My Name", "m"));
+*/
+
+// ? Using split method | Case Sensitive
+
+/*
+
+const countLetters = (str, letter) => {
+  let string = str.split(letter);
+
+  const result = string.length - 1;
+
+  return result;
+};
+
+console.log(countLetters("My Name", "M"));
+console.log(countLetters("My Name", "a"));
+console.log(countLetters("My Name", "m"));
 
 */
+
+console.log(countLetters("My Name", "M"));
+console.log(countLetters("My Name", "a"));
+console.log(countLetters("My Name", "m"));
