@@ -7,6 +7,8 @@ const CountLetters = (str, letter) => {
   let string = str.toLowerCase();
   let letterInLowercase = letter.toLowerCase();
 
+  // Strings have an length arrays
+
   for (let i = 0; i < string.length; i++) {
     if (string[i] === letterInLowercase) {
       count++;
