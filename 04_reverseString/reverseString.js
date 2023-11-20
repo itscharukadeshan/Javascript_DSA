@@ -12,7 +12,9 @@ const reverseString = (string) => {
   return result;
 };
 
-console.log(reverseString("desrever uoy gnirts eht si sihT"));
+console.log(
+  reverseString("sdohtem ni tliub gnisu desrever uoy gnirts eht si sihT")
+);
 
 const reverseStringWithForLoop = (string) => {
   let reversed = "";
@@ -21,9 +23,13 @@ const reverseStringWithForLoop = (string) => {
     reversed += string[i];
   }
 
+  // ! Use for loop to go though the string from end to start and append (=+) the the reversed string to the reversed empty string
+
   const result = reversed;
 
   return result;
 };
 
-console.log(reverseStringWithForLoop("desrever uoy gnirts eht si sihT"));
+console.log(
+  reverseStringWithForLoop("pool rof gnisu desrever uoy gnirts eht si sihT")
+);
