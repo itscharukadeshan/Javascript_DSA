@@ -2,7 +2,6 @@
 
 // * Using built in methods
 
-/*
 const reverseString = (string) => {
   const result = string.split("").reverse().join("");
 
@@ -14,8 +13,6 @@ const reverseString = (string) => {
 };
 
 console.log(reverseString("desrever uoy gnirts eht si sihT"));
-
-*/
 
 const reverseStringWithForLoop = (string) => {
   let reversed = "";
