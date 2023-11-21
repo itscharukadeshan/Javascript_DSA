@@ -78,6 +78,8 @@ const findMissingNumber = (array) => {
 
 console.log(`Using for loops | ${findMissingNumber(NumberArray)}`);
 
+// * Using reduce
+
 const findMissingNumberWithReduce = (array) => {
   if (array.length === 0) return 1;
 
