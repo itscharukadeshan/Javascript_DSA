@@ -15,7 +15,11 @@ console.log(
   `Generated non repeating array with 1 - 1000 numbers. | NumberArray.length = ${NumberArray.length} |`
 );
 
+
 */
+
+// * Remove radome number from the array
+
 let missing = Math.floor(Math.random() * count) + 1;
 
 let index = NumberArray.indexOf(missing);
