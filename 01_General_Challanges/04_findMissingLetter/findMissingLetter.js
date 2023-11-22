@@ -19,5 +19,18 @@ const findMissingLetter = (letterArray) => {
 console.log(findMissingLetter(["a", "b", "c", "d", "f"]));
 
 const findMissingLetterWithUniCode = (letterArray) => {
-  const start = letterArray[0].charCodeAt(0);
+  let start = letterArray[0].charCodeAt(0);
+
+  for (let i = 0; i < letterArray.length; i++) {
+    const current = letterArray[i].charCodeAt(0);
+
+    if (current - start > 1) {
+      return String.fromCharCode(start + 1);
+    }
+    start = current;
+  }
+
+  return "";
 };
+
+console.log(findMissingLetterWithUniCode(["a", "b", "c", "d", "f"]));
