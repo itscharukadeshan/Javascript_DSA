@@ -1,0 +1,5 @@
+<!-- @format -->
+
+diceGameSim
+formatPhoneNumber
+validateEmail
