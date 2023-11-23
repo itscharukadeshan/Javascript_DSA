@@ -44,4 +44,4 @@ const fizzBuzzWithFistCommonNum = (number) => {
   return result;
 };
 
-fizzBuzzWithFistCommonNum(30);
+console.log(fizzBuzzWithFistCommonNum(30));
