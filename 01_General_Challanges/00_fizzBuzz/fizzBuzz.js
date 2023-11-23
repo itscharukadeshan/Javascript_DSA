@@ -1,5 +1,7 @@
 /** @format */
 
+// ? Common  question
+
 const fizzBuzz = (number) => {
   const array = [];
 
