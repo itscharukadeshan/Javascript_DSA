@@ -39,9 +39,13 @@ const fizzBuzzWithFistCommonNum = (number) => {
     }
   }
 
+  const uniq = new Set(array);
+
+  const size = uniq.size - 3;
+
   const result = array;
 
-  return result;
+  return `${result} ==> There are [${size}] numbers that not follow the pattern`;
 };
 
 console.log(fizzBuzzWithFistCommonNum(30));
