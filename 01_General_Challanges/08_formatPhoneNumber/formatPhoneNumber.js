@@ -1,5 +1,7 @@
 /** @format */
 
+// * Using slice and join
+
 const formatPhoneNumber = (numbersArray) => {
   const areaCode = numbersArray.slice(0, 3).join("");
 
@@ -13,6 +15,8 @@ const formatPhoneNumber = (numbersArray) => {
 };
 
 console.log(formatPhoneNumber([0, 2, 3, 5, 3, 3, 2, 1, 7, 6]));
+
+// * Using substrings
 
 const formatPhoneNumberWithSubString = (numbersArray) => {
   const joinNum = numbersArray.join("");
