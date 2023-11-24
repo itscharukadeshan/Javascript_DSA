@@ -4,7 +4,7 @@ const roleDice = () => {
   return Math.floor(Math.random() * 6) + 1;
 };
 
-const diceGameSim = (NumberOfTimes) => {
+const diceGameSim = (numberOfTimes) => {
   const results = [];
 
   for (let index = 0; index < NumberOfTimes; index++) {

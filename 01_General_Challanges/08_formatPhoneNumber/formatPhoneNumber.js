@@ -1,3 +1,3 @@
 /** @format */
 
-const formatPhoneNumber = () => {};
+const formatPhoneNumber = (numberString) => {};
