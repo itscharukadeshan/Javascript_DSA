@@ -26,9 +26,13 @@ console.log(oddNumbers);
 // * Reduce method
 
 const sumOfNumbers = numbers.reduce((total, number) => {
+  // ? Reduce take tow arguments first (total here) accumulate the given input
+
   const result = total + number;
 
   return result;
+
+  // ? Here this number (0) is the starting value of the first arguments (total here)
 }, 0);
 
 console.log(sumOfNumbers);
