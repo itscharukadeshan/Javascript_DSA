@@ -29,3 +29,20 @@ const calculateSquareSum = (numberArray) => {
 };
 
 console.log(calculateSquareSum(numbers));
+
+// * Summarize version
+
+const calculateSquareSuSummarize = (numberArray) => {
+  const oneLiner = numberArray
+    .filter((number) => number % 2 == 0)
+    .map((number) => number * number)
+    .reduce((total, number) => {
+      return total + number;
+    }, 0);
+
+  const result = oneLiner;
+
+  return result;
+};
+
+console.log(calculateSquareSuSummarize(numbers));
