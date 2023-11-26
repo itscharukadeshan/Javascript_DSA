@@ -36,3 +36,12 @@ const sumOfNumbers = numbers.reduce((total, number) => {
 }, 0);
 
 console.log(sumOfNumbers);
+
+// * ForEach
+
+const addTwo = numbers.forEach((number) => {
+  // ? Work's identical to for loops
+  console.log(number);
+});
+
+console.log(addTwo);
