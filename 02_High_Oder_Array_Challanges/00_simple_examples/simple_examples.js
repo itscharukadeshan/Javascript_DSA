@@ -57,7 +57,9 @@ console.log(findNumber);
 const hasSomeEvenNumbers = numbers.some((number) => {
   // ? Checks for attest one of the array element pass the given condition
 
-  number % 2 === 0;
+  return number % 2 === 0;
+
+  // ? If you forgot to return its gives false as default
 });
 
 console.log(hasSomeEvenNumbers);
