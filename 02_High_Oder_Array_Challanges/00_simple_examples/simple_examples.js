@@ -63,3 +63,9 @@ const hasSomeEvenNumbers = numbers.some((number) => {
 });
 
 console.log(hasSomeEvenNumbers);
+
+const checkEveryNumber = numbers.every((number) => {
+  return number >= 8;
+});
+
+console.log(checkEveryNumber);
