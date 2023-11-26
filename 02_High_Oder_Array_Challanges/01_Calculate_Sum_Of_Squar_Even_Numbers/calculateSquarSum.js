@@ -1,5 +1,15 @@
 /** @format */
 
+// * Generate Big number array
+
+let numbers = [];
+
+for (let i = -1000; i <= 1000; i++) {
+  numbers.push(i);
+}
+
+// * calculate sum using Filter , Map and Reduce
+
 const calculateSquareSum = (numberArray) => {
   const evenNumberArray = numberArray.filter((number) => {
     return number % 2 === 0;
@@ -18,4 +28,4 @@ const calculateSquareSum = (numberArray) => {
   return result;
 };
 
-console.log(calculateSquareSum([1, 2, 3, 4, 5, 6, 7, 8]));
+console.log(calculateSquareSum(numbers));
