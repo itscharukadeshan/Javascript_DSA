@@ -51,3 +51,13 @@ const findNumber = numbers.find((number) => {
 });
 
 console.log(findNumber);
+
+// * Some method
+
+const hasSomeEvenNumbers = numbers.some((number) => {
+  // ? Checks for attest one of the array element pass the given condition
+
+  number % 2 === 0;
+});
+
+console.log(hasSomeEvenNumbers);
