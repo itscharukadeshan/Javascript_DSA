@@ -44,4 +44,10 @@ const addTwo = numbers.forEach((number) => {
   console.log(number);
 });
 
-console.log(addTwo);
+// * Find method
+
+const findNumber = numbers.find((number) => {
+  return number > 2;
+});
+
+console.log(findNumber);
