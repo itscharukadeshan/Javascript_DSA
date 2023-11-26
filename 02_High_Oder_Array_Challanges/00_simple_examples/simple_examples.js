@@ -64,6 +64,7 @@ const hasSomeEvenNumbers = numbers.some((number) => {
 
 console.log(hasSomeEvenNumbers);
 
+// ? Check every array element for given condition
 const checkEveryNumber = numbers.every((number) => {
   return number >= 8;
 });
