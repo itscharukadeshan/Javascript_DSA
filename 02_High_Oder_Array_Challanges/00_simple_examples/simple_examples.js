@@ -22,3 +22,13 @@ const oddNumbers = numbers.filter((number) => {
 });
 
 console.log(oddNumbers);
+
+// * Reduce method
+
+const sumOfNumbers = numbers.reduce((total, number) => {
+  const result = total + number;
+
+  return result;
+}, 0);
+
+console.log(sumOfNumbers);
