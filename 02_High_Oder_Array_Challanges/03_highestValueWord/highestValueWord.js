@@ -1,5 +1,7 @@
 /** @format */
 
+// * Using for of loops and maps
+
 const string = "This String With highest value word => xxxx ";
 
 const highestValueWord = (string) => {
