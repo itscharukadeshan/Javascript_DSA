@@ -1,6 +1,6 @@
 /** @format */
 
-const string = "This is the String With highest value word => xxxx ";
+const string = "This String With highest value word => xxxx ";
 
 const highestValueWord = (string) => {
   const words = string.toLowerCase().split(" ");
