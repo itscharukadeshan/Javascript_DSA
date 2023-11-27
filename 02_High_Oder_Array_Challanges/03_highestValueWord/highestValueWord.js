@@ -32,3 +32,21 @@ const highestValueWord = (string) => {
 };
 
 console.log(highestValueWord(string));
+
+// * With map and reduce
+
+const highestValueWordWithMap = (string) => {
+  const words = string.toLowerCase().split(" ");
+
+  const values = words.map((word) => {
+    return Array.from(word).reduce((value, letter) => {
+      return value + letter.charCodeAt(0) - 96;
+    }, 0);
+  });
+
+  const highestValue = Math.max(...values);
+  const highestIndex = values.indexOf(highestValue);
+  return words[highestIndex];
+};
+
+console.log(highestValueWordWithMap(string));
