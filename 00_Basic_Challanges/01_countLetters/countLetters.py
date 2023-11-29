@@ -1,3 +1,5 @@
+# ? Count letters case sensitive
+
 def countLetters(str, letter):
 
     count = 0
