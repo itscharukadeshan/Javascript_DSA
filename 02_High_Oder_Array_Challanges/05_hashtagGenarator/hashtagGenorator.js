@@ -19,3 +19,18 @@ const hashtagGenerator = (string) => {
 };
 
 console.log(hashtagGenerator("hello world"));
+
+//* Using reduce
+
+const hashtagGeneratorWithReduce = (string) => {
+  const hashTag = string
+    .trim()
+    .split(" ")
+    .reduce((tag, word) => {
+      return tag + word.charAt(0).toUpperCase() + word.substring(1);
+    }, "#");
+
+  return hashTag.length === 1 || hashTag.length > 140 ? false : hashTag;
+};
+
+console.log(hashtagGeneratorWithReduce("hello world With Reduce"));
