@@ -1,5 +1,7 @@
 /** @format */
 
+// Basic calculater that takes two numbers and do basic oparation
+
 const calculate = (A, B, operator) => {
   const firstNumber = A;
   const SecondNumber = B;

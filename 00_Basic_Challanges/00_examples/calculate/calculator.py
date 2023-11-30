@@ -1,3 +1,5 @@
+## Basic calculater that takes two numbers and do basic oparation
+
 def calculate(a, b, operator):
     """Calculate simple math operation on 2 numbers"""
     first_number = a 

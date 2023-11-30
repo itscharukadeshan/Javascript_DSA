@@ -1,3 +1,5 @@
+## Take tow numbers and give the sum of those numbers
+
 def getSum (A , B) :
 
     first_number = A

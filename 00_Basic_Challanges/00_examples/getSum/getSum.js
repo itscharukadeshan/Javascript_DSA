@@ -1,5 +1,7 @@
 /** @format */
 
+// Take tow numbers and give the sum of those numbers
+
 const getSum = (A, B) => {
   const firstNumber = A;
   const secondNumber = B;
