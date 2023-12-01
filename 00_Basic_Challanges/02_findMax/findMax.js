@@ -1,21 +1,15 @@
 /** @format */
 // * Built in method
 
-/*
-
-const findMax = (array) => {
+const findMaxWithBuiltIn = (array) => {
   const result = Math.max(...array);
 
   return result;
 };
 
-console.log(findMax([1, 5, 3, 2, 7, 10, 5, 15]));
-
-*/
+console.log(findMaxWithBuiltIn([1, 5, 3, 2, 7, 10, 5, 15]));
 
 // * With For Loops
-
-/*
 
 const findMaxWithForLoop = (array) => {
   let max = array[0];
@@ -32,5 +26,3 @@ const findMaxWithForLoop = (array) => {
 };
 
 console.log(findMaxWithForLoop([1, 2, 5, 8, 9, 10, 12]));
-
-*/
