@@ -6,7 +6,7 @@ const findMissingLetter = (array) => {
   let start = array[0].charCodeAt(0);
 
   const missingLetter = array
-    .slice(0)
+    .slice(1)
     .map((char) => char.charCodeAt(0))
     .find((current) => {
       if (current - 1 > start) {
