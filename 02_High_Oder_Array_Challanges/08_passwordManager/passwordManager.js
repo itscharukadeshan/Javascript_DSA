@@ -1,5 +1,7 @@
 /** @format */
 
+// * Using split
+
 const passwordManager = (string) => {
   const isValueCorrect = string.length >= 8;
   const hasUpperCase = string
