@@ -1,5 +1,7 @@
 /** @format */
 
+// * Using map and find
+
 const findMissingLetter = (array) => {
   let start = array[0].charCodeAt(0);
 
