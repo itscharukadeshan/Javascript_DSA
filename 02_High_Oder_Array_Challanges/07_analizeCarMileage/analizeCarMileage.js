@@ -18,6 +18,8 @@ const carArray = [
   },
 ];
 
+// * Using reduce
+
 const analyzeCarMileage = (carArray) => {
   const totalMileage = carArray.reduce((sum, car) => {
     return sum + car.mileage;
