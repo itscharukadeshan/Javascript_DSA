@@ -1,5 +1,23 @@
 /** @format */
 
+const carArray = [
+  {
+    make: "Toyota",
+    model: "Camry",
+    mileage: 45000,
+  },
+  {
+    make: "Honda",
+    model: "Civic",
+    mileage: 30000,
+  },
+  {
+    make: "Ford",
+    model: "F-150",
+    mileage: 25000,
+  },
+];
+
 const analyzeCarMileage = (carArray) => {
   const totalMileage = carArray.reduce((sum, car) => {
     return sum + car.mileage;
@@ -25,3 +43,5 @@ const analyzeCarMileage = (carArray) => {
     TotalMileage: totalMileage,
   };
 };
+
+console.log(analyzeCarMileage(carArray));
