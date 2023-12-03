@@ -16,3 +16,4 @@ const passwordManager = (string) => {
 };
 
 console.log(passwordManager("Abcd12345"));
+console.log(passwordManager("abcd12345"));
