@@ -1,9 +1,7 @@
 {
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "run": "yarn run",
-    "lint": "lint"
+    "test": "jest"
   },
   "dependencies": {
     "jest": "^29.7.0"
