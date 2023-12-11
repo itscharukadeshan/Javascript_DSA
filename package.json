@@ -2,7 +2,7 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "run": "npm run"
+    "run": "yarn run"
   },
   "dependencies": {
     "jest": "^29.7.0"
