@@ -3,7 +3,7 @@
 const reverseString = (String) => {
   // Base case
 
-  console.log(`Reverse function called with string: ${str}`);
+  console.log(`Reverse function called with string: ${String}`);
 
   if (String === "") {
     console.log(`Hit base case, empty string. Returning empty string`);
