@@ -18,3 +18,15 @@ const fibonacci = (number) => {
 console.log(`Result : ${fibonacci(10)}`);
 
 console.log(`Times fibonacci called : ${runtime} `);
+
+// One line
+
+/*
+
+const fibonacciOneLine = (number) =>
+  number < 2 ? number : fibonacci(number - 1) + fibonacci(number - 2);
+
+console.log(`Result : ${fibonacciOneLine(10)}`);
+
+
+*/
