@@ -13,7 +13,9 @@ function fibCalc(n) {
     }
   }
 
+  console.log(`Result in 10th Index : ${myArr[10]}`);
+
   return myArr;
 }
 
-console.log(fibCalc(8));
+console.log(fibCalc(11));
