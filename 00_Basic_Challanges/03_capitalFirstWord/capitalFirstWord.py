@@ -1,3 +1,6 @@
+
+## Using for loop
+
 def capitalizeFirstWord(string):
   
   splitByWords = string.split()
