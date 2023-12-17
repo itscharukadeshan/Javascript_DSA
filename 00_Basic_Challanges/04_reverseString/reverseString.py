@@ -1,7 +1,7 @@
 
 ## * reverse String With For Loop
 
-def reverseString (string) :
+def reverseStringWithForLoop (string) :
 
     words = string.split(" ")
     
@@ -15,4 +15,4 @@ def reverseString (string) :
 
 
 
-print(reverseString("sdohtem ni tliub gnisu desrever uoy gnirts eht si sihT"))
+print(reverseStringWithForLoop("sdohtem ni tliub gnisu desrever uoy gnirts eht si sihT"))
