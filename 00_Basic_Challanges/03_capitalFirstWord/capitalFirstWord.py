@@ -11,6 +11,4 @@ def capitalizeFirstWord(string):
 
   return " ".join(splitByWords)  
 
-
-print(capitalizeFirstWord("AA"))  
 print(capitalizeFirstWord("This is a sentence"))  
