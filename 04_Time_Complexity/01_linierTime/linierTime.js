@@ -10,7 +10,7 @@ const linierTime = (array) => {
   return sum;
 };
 
-const firstArray = Array.from({ length: 10 }, (_, index) => index + 1);
+const firstArray = [1, 2, 3, 4, 5, 6, 7];
 const secondArray = Array.from({ length: 100000 }, (_, index) => index + 1);
 
 // * With smaller input

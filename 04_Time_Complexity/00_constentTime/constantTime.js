@@ -6,7 +6,7 @@
 
 // Example 01 | Smaller Input
 
-const SmallArray = Array.from({ length: 6 }, (_, index) => index + 1);
+const SmallArray = [1, 2, 3, 4, 5, 6, 7];
 
 const constantTime = (arr, index) => {
   return arr[index];
