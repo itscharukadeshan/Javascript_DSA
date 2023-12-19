@@ -6,13 +6,15 @@
 
 // Example 01 | Smaller Input
 
+const SmallArray = Array.from({ length: 6 }, (_, index) => index + 1);
+
 const constantTime = (arr, index) => {
   return arr[index];
 };
 
 console.time("Access the fifth element ");
 
-console.log(constantTime([1, 2, 3, 4, 5, 6], 5));
+console.log(constantTime(SmallArray, 5));
 
 console.timeEnd("Access the fifth element ");
 
