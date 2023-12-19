@@ -17,7 +17,7 @@ const secondArray = Array.from({ length: 100000 }, (_, index) => index + 1);
 
 console.time("Access the fifth element | With smaller input ");
 
-console.log(linierTime(firstArray, 5));
+console.log(linierTime(firstArray));
 
 console.timeEnd("Access the fifth element | With smaller input ");
 
@@ -25,6 +25,6 @@ console.timeEnd("Access the fifth element | With smaller input ");
 
 console.time("Access the fifth element | With lager input ");
 
-console.log(linierTime(secondArray, 5));
+console.log(linierTime(secondArray));
 
 console.timeEnd("Access the fifth element | With lager input ");
