@@ -27,7 +27,7 @@ console.timeEnd("Access the fifth element | With smaller input ");
 
 // * With lager input
 
-const secondArray = Array.from({ length: 1000 }, (_, index) => index + 1);
+const secondArray = Array.from({ length: 10000 }, (_, index) => index + 1);
 
 console.time("Access the fifth element | With lager input ");
 
