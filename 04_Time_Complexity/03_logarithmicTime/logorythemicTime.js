@@ -13,3 +13,19 @@ const findPower = (base, exponent) => {
     return halfPower * halfPower;
   }
 };
+
+// * With smaller exponent
+
+console.time("With smaller input");
+
+console.log(findPower(2, 100));
+
+console.timeEnd("With smaller input");
+
+// * With lager exponent
+
+console.time("With lager input");
+
+console.log(findPower(2, 100));
+
+console.timeEnd("With lager input");
