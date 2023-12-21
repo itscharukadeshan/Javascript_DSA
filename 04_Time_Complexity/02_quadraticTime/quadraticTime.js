@@ -14,3 +14,23 @@ const quadraticTime = (array) => {
 
   return sum + sum_02;
 };
+
+// * With smaller input
+
+const firstArray = [1, 2, 3, 4, 5, 6, 7];
+
+console.time("Access the fifth element | With smaller input ");
+
+console.log(quadraticTime(firstArray));
+
+console.timeEnd("Access the fifth element | With smaller input ");
+
+// * With lager input
+
+const secondArray = Array.from({ length: 100000000 }, (_, index) => index + 1);
+
+console.time("Access the fifth element | With lager input ");
+
+console.log(quadraticTime(secondArray));
+
+console.timeEnd("Access the fifth element | With lager input ");
