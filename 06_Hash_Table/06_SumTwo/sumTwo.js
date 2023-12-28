@@ -1,5 +1,9 @@
 /** @format */
 
+// ? Take input array and target check what two numbers sum to the target.
+
+// ? Return index of the two numbers
+
 const sumTwo = (numberArray, target) => {
   const numSet = new Set();
   for (let i = 0; i < numberArray.length; i++) {
