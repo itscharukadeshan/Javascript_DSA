@@ -14,9 +14,40 @@ class CustomHashTable {
 
     return hash % max;
   }
+
+  printTable() {
+    for (let i = 0; i < this.storage.length; i++) {
+      if (this.storage[i] !== undefined) {
+        console.log(`Bucket ${i} : ${JSON.stringify(this.storage[i])}`);
+      } else {
+        console.log(`Bucket ${i} : Empty [[Key , Value]]`);
+      }
+    }
+  }
+
+  set(key, value) {
+    const index = this._hash(key, this.limit);
+
+    if (this.storage[index] === undefined) {
+      this.storage[index] = [[key, value]];
+    } else {
+      let inserted = false;
+
+      for (let i = 0; i < this.storage[index].length; i++) {
+        if (this.storage[index][i][0] === key) {
+          this.storage[index][i][1] = value;
+          inserted = true;
+        }
+      }
+
+      if (inserted === false) {
+        this.storage[index].push([key, value]);
+      }
+    }
+  }
 }
 
 const newHashTable = new CustomHashTable();
-const result = newHashTable._hash("myKey", newHashTable.limit);
 
-console.log(result);
+newHashTable.set("John", "222-44-5-5");
+newHashTable.printTable();
