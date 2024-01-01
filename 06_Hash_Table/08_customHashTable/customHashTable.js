@@ -76,6 +76,19 @@ class CustomHashTable {
       }
     }
   }
+  has(key) {
+    const index = this._hash(key, this.limit);
+
+    if (this.storage[index]) {
+      for (let i = 0; i < this.storage[index].length; i++) {
+        if (this.storage[index][i][0] === key) {
+          return true;
+        }
+      }
+    }
+
+    return false;
+  }
 }
 const newHashTable = new CustomHashTable();
 
@@ -97,3 +110,8 @@ newHashTable.printTable();
 newHashTable.remove("Jill");
 
 newHashTable.printTable();
+
+// * Check for key is present in the table
+
+console.log(newHashTable.has("Jill")); // Removed one
+console.log(newHashTable.has("John"));
