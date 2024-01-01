@@ -79,5 +79,21 @@ class CustomHashTable {
 }
 const newHashTable = new CustomHashTable();
 
+// * Add Two key value pairs
+
 newHashTable.set("John", "222-44-5-5");
+newHashTable.set("Jill", "333-44-5-5");
+
+// * Get the number [value] from name [key]
+
 console.log(newHashTable.get("John"));
+
+// * Verify the two key value pairs
+
+newHashTable.printTable();
+
+// * Remove one of the pairs
+
+newHashTable.remove("Jill");
+
+newHashTable.printTable();
