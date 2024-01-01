@@ -59,8 +59,24 @@ class CustomHashTable {
       }
     }
   }
+  remove(key) {
+    const index = this._hash(key, this.limit);
+    if (this.storage[index]) {
+      if (
+        this.storage[index].length === 1 &&
+        this.storage[index][0][0] === key
+      ) {
+        delete this.storage[index];
+      } else {
+        for (let i = 0; i < this.storage[index.length]; i++) {
+          if (this.storage[index][i][0] === key) {
+            delete this.storage[index][i];
+          }
+        }
+      }
+    }
+  }
 }
-
 const newHashTable = new CustomHashTable();
 
 newHashTable.set("John", "222-44-5-5");
