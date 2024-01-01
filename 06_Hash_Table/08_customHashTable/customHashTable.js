@@ -89,6 +89,9 @@ class CustomHashTable {
 
     return false;
   }
+  clear() {
+    this.storage = [];
+  }
 }
 const newHashTable = new CustomHashTable();
 
@@ -115,3 +118,11 @@ newHashTable.printTable();
 
 console.log(newHashTable.has("Jill")); // Removed one
 console.log(newHashTable.has("John"));
+
+//* Clear the table
+
+newHashTable.clear();
+
+// * Check the table for data
+
+newHashTable.printTable();
