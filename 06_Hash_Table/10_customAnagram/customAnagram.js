@@ -15,3 +15,5 @@ const customAnagram = (words) => {
   }
   return anagramGrouping.getValue();
 };
+
+console.log(customAnagram(["cat", "act", "dog", "god", "nonAnagram"]));
