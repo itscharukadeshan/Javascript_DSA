@@ -18,7 +18,7 @@ class Stack {
   }
 
   pop() {
-    if (this.isEmpty) {
+    if (this.isEmpty()) {
       return null;
     }
     this.top--;
