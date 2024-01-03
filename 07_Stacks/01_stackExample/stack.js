@@ -17,6 +17,20 @@ class Stack {
     return true;
   }
 
+  pop() {
+    if (this.isEmpty) {
+      return null;
+    }
+    this.top--;
+
+    return;
+    this.stack.pop();
+  }
+
+  isEmpty() {
+    return this.top === -1;
+  }
+
   isFull() {
     return this.top === this.maxSize - 1;
   }
