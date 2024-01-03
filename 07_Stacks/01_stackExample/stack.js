@@ -23,8 +23,7 @@ class Stack {
     }
     this.top--;
 
-    return;
-    this.stack.pop();
+    return this.stack.pop();
   }
 
   isEmpty() {
