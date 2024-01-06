@@ -23,6 +23,15 @@ class Queue {
     return true;
   }
 
+  dequeue() {
+    const item = this.queue[this.head];
+    this.head++;
+    return item;
+  }
+
+  peek() {
+    return this.queue[this.head];
+  }
   getLength() {
     return this.tail - this.head;
   }
