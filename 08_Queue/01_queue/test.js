@@ -10,4 +10,12 @@ queue.enqueue("b");
 
 queue.enqueue("c");
 
-console.log(queue);
+console.log(queue.peek());
+
+// * peek method get the top item in the queue
+
+queue.dequeue("a");
+
+// * dequeue method remove the first item in queue
+
+console.log(queue.peek());
