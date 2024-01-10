@@ -24,6 +24,18 @@ class LinkedList {
     this.tail = node;
   }
 
+  get(index) {
+    let current = this.head;
+    let i = 0;
+
+    while (i < index) {
+      current = current.next;
+      i++;
+    }
+
+    return current.data;
+  }
+
   printAll() {
     let current = this.head;
 
