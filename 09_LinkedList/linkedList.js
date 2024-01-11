@@ -1,5 +1,7 @@
 /** @format */
 
+// * Node class for storing data
+
 class Node {
   constructor(data) {
     this.data = data;
@@ -7,6 +9,7 @@ class Node {
   }
 }
 
+// * LinkedList list example
 class LinkedList {
   constructor() {
     this.head = null;
