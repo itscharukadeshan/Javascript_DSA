@@ -70,6 +70,24 @@ class LinkedList {
       prev.next = node;
     }
   }
+
+  removeFrom(index) {
+    if (index === 0) {
+      this.head = this.head.next;
+    } else {
+      let current = this.head;
+      let prev = 0;
+      let i = 0;
+
+      while (i < index) {
+        prev = current;
+        current = current.next;
+        i++;
+      }
+
+      prev.next = current.next;
+    }
+  }
 }
 
 module.exports = { Node, LinkedList };
