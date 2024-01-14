@@ -17,3 +17,9 @@ list.printAll();
 list.prePend(50);
 
 list.printAll();
+
+// adding new node in between index 0 - 1 (50 -[>=newNodeHere<=] -100)
+
+list.insertAt(1, 70);
+
+list.printAll();
