@@ -40,6 +40,35 @@ class BiDirectionalLinkedList {
     this.length++;
   }
 
+  insertAt(index, data) {
+    if (index < 0 || index > this.length) {
+      return null;
+    }
+
+    if (index === 0) {
+      return this.prePend(data);
+    }
+
+    if (index === this.length) {
+      return this.append(data);
+    }
+
+    const newNode = new Node(data);
+
+    let current = this.head;
+
+    for (let i = 0; i < index - 1; i++) {
+      current = current.next;
+    }
+
+    newNode.next = current.next;
+    newNode.prev = current;
+    current.next.prev = newNode;
+    current.next = newNode;
+
+    this.length++;
+  }
+
   printAll() {
     let current = this.head;
 
