@@ -11,3 +11,9 @@ list.append(400);
 list.append(400);
 
 list.printAll();
+
+// * adding new node before 100
+
+list.prePend(50);
+
+list.printAll();
