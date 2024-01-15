@@ -12,11 +12,11 @@ list.append(300);
 list.append(400);
 list.append(400);
 
-// * adding new node before 100
+// * Adding new node before 100
 
 list.prePend("=> 50");
 
-// adding new node in between index 0 - 1 (50 -[>=newNodeHere<=] -100)
+// * Adding new node in between index 0 - 1 (50 -[>=newNodeHere<=] -100)
 
 list.insertAt(1, ">= 70 <=");
 
@@ -25,3 +25,7 @@ list.printAll();
 // * Get data with index
 
 console.log(list.get(0).data);
+
+// * Remove the data with index
+
+list.remove(1);

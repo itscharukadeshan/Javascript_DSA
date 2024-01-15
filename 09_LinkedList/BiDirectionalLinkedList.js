@@ -83,6 +83,40 @@ class BiDirectionalLinkedList {
     return current;
   }
 
+  remove(index) {
+    if (index < 0 || index > this.length) {
+      return null;
+    }
+
+    if (index === 0) {
+      this.head = this.head.next;
+
+      if (this.head) {
+        this.head.prev = null;
+      } else {
+        this.tail = null;
+      }
+    } else if (index === this.length - 1) {
+      this.tail = this.tail.prev;
+
+      if (this.tail) {
+        this.tail.next = null;
+      } else {
+        this.head = null;
+      }
+    } else {
+      let current = this.head;
+
+      for (let i = 0; i < index; i++) {
+        current = current.next;
+      }
+
+      current.prev.next = current.next;
+      current.next.prev = current.prev;
+    }
+    this.length--;
+  }
+
   printAll() {
     let current = this.head;
 
