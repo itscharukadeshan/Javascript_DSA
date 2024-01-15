@@ -21,3 +21,7 @@ list.prePend("=> 50");
 list.insertAt(1, ">= 70 <=");
 
 list.printAll();
+
+// * Get data with index
+
+console.log(list.get(0).data);
