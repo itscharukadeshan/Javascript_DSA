@@ -29,3 +29,8 @@ console.log(list.get(0).data);
 // * Remove the data with index
 
 list.remove(1);
+
+// * Check the data is available
+
+console.log(list.contain(100));
+console.log(list.contain(900));
