@@ -117,6 +117,20 @@ class BiDirectionalLinkedList {
     this.length--;
   }
 
+  contain(data) {
+    let current = this.head;
+
+    while (current) {
+      if (current.data === data) {
+        return true;
+      }
+
+      current = current.next;
+    }
+
+    return false;
+  }
+
   printAll() {
     let current = this.head;
 
