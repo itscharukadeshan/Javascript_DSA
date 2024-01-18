@@ -1,6 +1,10 @@
 /** @format */
 
-const { Node, depthFirstTraversal } = require("./depthFirstTraversals");
+const {
+  Node,
+  depthFirstTraversal,
+  depthFirstTraversalWithStack,
+} = require("./depthFirstTraversals");
 
 // * Add Nodes and data
 
@@ -22,5 +26,7 @@ c.right = f;
 // * Add result
 
 const result = depthFirstTraversal(root);
+const resultWithStack = depthFirstTraversalWithStack(root);
 
 console.log(result);
+console.log(resultWithStack);
