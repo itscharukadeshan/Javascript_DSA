@@ -1,5 +1,7 @@
 /** @format */
 
+// * Add stack example
+
 class Stack {
   constructor() {
     this.maxSize = 100;
