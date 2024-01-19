@@ -1,8 +1,8 @@
 /** @format */
 
 class Node {
-  constructor(data) {
-    this.data = data;
+  constructor(value) {
+    this.value = value;
     this.right = null;
     this.left = null;
   }
@@ -13,7 +13,7 @@ const recDepthFirstTraversals = (root) => {
 
   const traverse = (node) => {
     if (node !== null) {
-      result.push(node.data);
+      result.push(node.value);
 
       traverse(node.left);
       traverse(node.right);
