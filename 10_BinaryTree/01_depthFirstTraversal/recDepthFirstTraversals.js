@@ -8,6 +8,21 @@ class Node {
   }
 }
 
-const recDepthFirstTraversals = () => {};
+const recDepthFirstTraversals = (root) => {
+  const result = [];
+
+  const traverse = (node) => {
+    if (node !== null) {
+      result.push(node.data);
+
+      traverse(node.left);
+      traverse(node.right);
+    }
+  };
+
+  traverse(root);
+
+  return result;
+};
 
 module.exports = { Node, recDepthFirstTraversals };
