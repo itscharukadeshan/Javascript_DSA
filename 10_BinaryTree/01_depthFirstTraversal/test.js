@@ -6,6 +6,8 @@ const {
   depthFirstTraversalWithStack,
 } = require("./depthFirstTraversals");
 
+const { recDepthFirstTraversals } = require("./recDepthFirstTraversals");
+
 // * Add Nodes and data
 
 const root = new Node("a");
@@ -27,6 +29,8 @@ c.right = f;
 
 const result = depthFirstTraversal(root);
 const resultWithStack = depthFirstTraversalWithStack(root);
+const resultWithRecursion = recDepthFirstTraversals(root);
 
 console.log(result);
 console.log(resultWithStack);
+console.log(resultWithRecursion);
