@@ -10,6 +10,56 @@ class Node {
   }
 }
 
-const breathFirstTraversal = () => {};
+const breathFirstTraversal = (root) => {
+  if (!root) {
+    return [];
+  }
 
-module.exports = { Node, breathFirstTraversal };
+  const result = [];
+  const queue = [];
+
+  queue.push(root);
+
+  while (queue.length > 0) {
+    const current = queue.shift();
+    result.push(current.data);
+
+    if (current.left) {
+      queue.push(current.left);
+    }
+    if (current.right) {
+      queue.push(current.right);
+    }
+  }
+
+  return result;
+};
+
+// * With Queue class
+
+const breathFirstTraversalWithQueue = (root) => {
+  if (!root) {
+    return [];
+  }
+
+  const result = [];
+  const queue = new Queue();
+
+  queue.enqueue(root);
+
+  while (!queue.isEmpty()) {
+    const current = queue.dequeue();
+    result.push(current.data);
+
+    if (current.left) {
+      queue.enqueue(current.left);
+    }
+    if (current.right) {
+      queue.enqueue(current.right);
+    }
+  }
+
+  return result;
+};
+
+module.exports = { Node, breathFirstTraversal, breathFirstTraversalWithQueue };
