@@ -1,6 +1,10 @@
 /** @format */
 
-const { Node, breathFirstTraversal } = require("./breathFirstTraversal");
+const {
+  Node,
+  breathFirstTraversal,
+  breathFirstTraversalWithQueue,
+} = require("./breathFirstTraversal");
 
 const root = new Node("a");
 const nodeB = new Node("b");
@@ -16,5 +20,7 @@ nodeB.left = nodeE;
 nodeC.left = nodeF;
 
 const result = breathFirstTraversal(root);
+const resultWithQueue = breathFirstTraversalWithQueue(root);
 
 console.log(result);
+console.log(resultWithQueue);
