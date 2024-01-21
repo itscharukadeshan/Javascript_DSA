@@ -2,6 +2,12 @@
 
 const { Node, BiSearchTree } = require("./binarySearchTree");
 
+function logHorizontalLine(length) {
+  console.log(" ".repeat(length));
+  console.log("_".repeat(length));
+  console.log(" ".repeat(length));
+}
+
 const bst = new BiSearchTree();
 
 bst.insert(20);
@@ -12,11 +18,16 @@ bst.insert(30);
 bst.insert(25);
 bst.insert(35);
 
+logHorizontalLine(20);
 console.log("Lookup method");
+logHorizontalLine(20);
 
 console.log(bst.lookup(10));
 
+logHorizontalLine(20);
+
 console.log("printTreeStructure method");
+logHorizontalLine(20);
 
 bst.printTreeStructure();
 
@@ -38,6 +49,12 @@ bst.printTreeStructure();
         └── 5 L
 
  */
+
+logHorizontalLine(20);
+
+console.log("remove method => remove the 10");
+
+logHorizontalLine(20);
 
 bst.remove(10);
 
