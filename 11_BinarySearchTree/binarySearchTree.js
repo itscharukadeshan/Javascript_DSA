@@ -42,6 +42,17 @@ class BiSearchTree {
       }
     }
   }
+
+  printTree() {
+    const printNode = (node) => {
+      if (node === null) return;
+
+      printNode(node.left);
+      console.log(node.value);
+      printNode(node.right);
+    };
+    printNode(this.root);
+  }
 }
 
 module.exports = { Node, BiSearchTree };
