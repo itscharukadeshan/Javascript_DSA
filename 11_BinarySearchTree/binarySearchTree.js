@@ -43,6 +43,24 @@ class BiSearchTree {
     }
   }
 
+  lookup(value) {
+    let currentNode = this.root;
+
+    if (currentNode === null) return null;
+
+    while (currentNode) {
+      if (value < currentNode.value) {
+        currentNode = currentNode.left;
+      } else if (value > currentNode.value) {
+        currentNode = currentNode.right;
+      } else if (value === currentNode.value) {
+        return currentNode;
+      }
+    }
+
+    return null;
+  }
+
   printTree() {
     const printNode = (node) => {
       if (node === null) return;
