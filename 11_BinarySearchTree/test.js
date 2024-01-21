@@ -12,6 +12,12 @@ bst.insert(30);
 bst.insert(25);
 bst.insert(35);
 
+console.log("Lookup method");
+
+console.log(bst.lookup(10));
+
+console.log("printTreeStructure method");
+
 bst.printTreeStructure();
 
 // ? Parent only can have two (binary) children
