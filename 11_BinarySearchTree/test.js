@@ -18,11 +18,15 @@ bst.insert(30);
 bst.insert(25);
 bst.insert(35);
 
+//--------------------------------
+
 logHorizontalLine(20);
 console.log("Lookup method");
 logHorizontalLine(20);
 
 console.log(bst.lookup(10));
+
+//--------------------------------
 
 logHorizontalLine(20);
 
@@ -49,6 +53,8 @@ bst.printTreeStructure();
         └── 5 L
 
  */
+
+//--------------------------------
 
 logHorizontalLine(20);
 
