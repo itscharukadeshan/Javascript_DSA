@@ -38,3 +38,36 @@ bst.printTreeStructure();
         └── 5 L
 
  */
+
+bst.remove(10);
+
+bst.printTreeStructure();
+
+// * Before remove the number [10] treeStructure 01
+// * Before remove the number [10] treeStructure 02
+
+/*
+
+[01]
+
+│       ┌── 35 R
+│   ┌── 30 R
+│   │   └── 25 L
+└── 20 L
+    │   ┌── 15 R
+    └── 10 L
+        └── 5 L
+
+------------------------------------
+[02]
+
+│       ┌── 35 R
+│   ┌── 30 R
+│   │   └── 25 L
+└── 20 L
+    └── 15 L =>  Remove number 10 
+        └── 5 L
+ */
+
+// * 15 > 5 so the right children [15] become parent
+// * left children [5]  become children of [15]
