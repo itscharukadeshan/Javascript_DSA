@@ -19,7 +19,7 @@ class BiSearchTree {
     if (this.root === null) {
       this.root = newNode;
     } else {
-      currentNode = this.root;
+      let currentNode = this.root;
 
       while (true) {
         if (value < currentNode.value) {
