@@ -61,6 +61,51 @@ class BiSearchTree {
     return null;
   }
 
+  remove(value) {
+    const removeNode = (node, value) => {
+      if (node === null) {
+        return null;
+      }
+
+      if (value < node.value) {
+        node.left = removeNode(node.left, value);
+        return node;
+      } else if (value > node.value) {
+        node.right = removeNode(node.right, value);
+        return node;
+      } else {
+        if (node.left === null && node.right === null) {
+          return null;
+        }
+
+        if (node.right === null) {
+          return node.left;
+        }
+
+        if (node.left === null) {
+          return node.right;
+        }
+
+        let temp = findMin(node.right);
+
+        node.value = temp.value;
+
+        node.right = removeNode(node.right, temp.value);
+
+        return node;
+      }
+    };
+
+    const findMin = (node) => {
+      while (node.left !== null) {
+        node = node.left;
+      }
+      return node;
+    };
+
+    this.root = removeNode(this.root, value);
+  }
+
   printTree() {
     const printNode = (node) => {
       if (node === null) return;
