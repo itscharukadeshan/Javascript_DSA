@@ -53,6 +53,24 @@ class BiSearchTree {
     };
     printNode(this.root);
   }
+
+  printTreeStructure() {
+    const print = (node, prefix = "", isLeft = true) => {
+      if (node.right) {
+        print(node.right, `${prefix}${isLeft ? "│   " : "    "}`, false);
+      }
+
+      const side = isLeft ? "L" : "R";
+
+      console.log(`${prefix}${isLeft ? "└── " : "┌── "}${node.value} ${side}`);
+
+      if (node.left) {
+        print(node.left, `${prefix}${isLeft ? "    " : "│   "}`, true);
+      }
+    };
+
+    print(this.root, "");
+  }
 }
 
 module.exports = { Node, BiSearchTree };
