@@ -21,7 +21,7 @@ const isValidateBST = (root) => {
 
     return (
       isValidSubTree(node.left, min, node.value) &&
-      isValidSubTree(node.right, max, node.value)
+      isValidSubTree(node.right, node.value, max)
     );
   };
 
