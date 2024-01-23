@@ -2,6 +2,8 @@
 
 const { Node, BiSearchTree } = require("./binarySearchTree");
 
+const { isValidBST } = require("./validateBST");
+
 function logHorizontalLine(length) {
   console.log(" ".repeat(length));
   console.log("_".repeat(length));
@@ -17,8 +19,6 @@ bst.insert(15);
 bst.insert(30);
 bst.insert(25);
 bst.insert(35);
-
-//--------------------------------
 
 logHorizontalLine(20);
 console.log("Lookup method");
@@ -94,3 +94,33 @@ bst.printTreeStructure();
 
 // * 15 > 5 so the right children [15] become parent
 // * left children [5]  become children of [15]
+
+const root = new Node(10);
+
+const node5 = new Node(5);
+const node15 = new Node(15);
+
+const node3 = new Node(3);
+const node7 = new Node(7);
+
+const node13 = new Node(13);
+const node17 = new Node(17);
+
+root.left = node5;
+root.right = node15;
+
+node5.left = node3;
+node5.right = node7;
+
+node15.left = node13;
+node15.right = node17;
+
+//---------------------------------
+
+logHorizontalLine(20);
+console.log("validate the binary search tree");
+
+const result = isValidBST(root);
+console.log(result);
+
+//--------------------------------
