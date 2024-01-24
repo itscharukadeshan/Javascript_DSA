@@ -23,6 +23,15 @@ class Graph {
       (node) => node !== node_1
     );
   }
+  removeNode(node) {
+    while (this.adjacencyList[node].length) {
+      const adjacencyNode = this.adjacencyList[node].pop();
+
+      this.removeEdge(node, adjacencyNode);
+    }
+
+    delete this.adjacencyList[node];
+  }
   printAdjacencyList() {
     for (let vertex in this.adjacencyList) {
       let edges = this.adjacencyList[vertex];
