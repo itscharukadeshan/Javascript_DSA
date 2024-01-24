@@ -33,11 +33,25 @@ class Graph {
     delete this.adjacencyList[node];
   }
   printAdjacencyList() {
+    let maxLen = 0;
     for (let vertex in this.adjacencyList) {
-      let edges = this.adjacencyList[vertex];
-
-      console.log(`${vertex} --> ${edges} `);
+      maxLen = Math.max(
+        maxLen,
+        vertex.length + this.adjacencyList[vertex].join(",").length
+      );
     }
+    maxLen += 10;
+
+    console.log("-".repeat(maxLen));
+    console.log(" ".repeat(maxLen));
+
+    for (let vertex in this.adjacencyList) {
+      let edges = this.adjacencyList[vertex].join(", ");
+      console.log(`${vertex} --> ${edges}`);
+    }
+
+    console.log(" ".repeat(maxLen));
+    console.log("-".repeat(maxLen));
   }
 }
 
