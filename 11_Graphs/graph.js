@@ -13,6 +13,16 @@ class Graph {
     this.adjacencyList[node_1].push(node_2);
     this.adjacencyList[node_2].push(node_1);
   }
+
+  removeEdge(node_1, node_2) {
+    this.adjacencyList[node_1] = this.adjacencyList[node_1].filter(
+      (node) => node !== node_2
+    );
+
+    this.adjacencyList[node_2] = this.adjacencyList[node_2].filter(
+      (node) => node !== node_1
+    );
+  }
   printAdjacencyList() {
     for (let vertex in this.adjacencyList) {
       let edges = this.adjacencyList[vertex];
