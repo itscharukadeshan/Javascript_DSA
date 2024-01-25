@@ -1,6 +1,6 @@
 /** @format */
 
-const breathFirstTraversal = requirer("./breathFirstTraversal.js");
+const breathFirstTraversal = require("./breathFirstTraversal.js");
 
 const Graph = require("../graph");
 
