@@ -1,5 +1,5 @@
 /** @format */
-const Stack = require("./stack");
+const Stack = require("../stack");
 
 const depthFirstTraversal = (graph, startingNode) => {
   if (!graph.adjacencyList[startingNode]) {
@@ -26,4 +26,4 @@ const depthFirstTraversal = (graph, startingNode) => {
   return result;
 };
 
-module.exports = depthFirstTraversal;
+module.exportsChan = depthFirstTraversal;
