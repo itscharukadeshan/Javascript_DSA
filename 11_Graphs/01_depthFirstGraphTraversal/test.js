@@ -1,23 +1,27 @@
 /** @format */
 
 const Graph = require("../graph");
+const depthFirstTraversal = require("./depthFirstGraphTraversal");
 
 const graph = new Graph();
 
-graph.addVertex("Shark");
-graph.addVertex("Octopus");
-graph.addVertex("Dolphin");
-graph.addVertex("Seal");
-graph.addVertex("Turtle");
-graph.addVertex("Whale");
-graph.addVertex("Penguin");
+graph.addVertex("A");
+graph.addVertex("B");
+graph.addVertex("C");
+graph.addVertex("D");
+graph.addVertex("E");
+graph.addVertex("F");
 
-graph.addEdge("Shark", "Octopus");
-graph.addEdge("Shark", "Dolphin");
-graph.addEdge("Shark", "Turtle");
-graph.addEdge("Octopus", "Dolphin");
-graph.addEdge("Seal", "Whale");
-graph.addEdge("Dolphin", "Whale");
-graph.addEdge("Penguin", "Octopus");
+graph.addEdge("A", "B");
+graph.addEdge("A", "C");
+graph.addEdge("B", "D");
+graph.addEdge("C", "D");
+graph.addEdge("C", "E");
+graph.addEdge("D", "F");
+graph.addEdge("E", "F");
 
 graph.printAdjacencyList();
+
+const result = depthFirstTraversal(graph, "A");
+
+console.log(result);
