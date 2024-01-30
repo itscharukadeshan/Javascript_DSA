@@ -1,9 +1,13 @@
 /** @format */
 
+// * visualize the array sorting in console step by step
+
 const visualize = (arr) => {
   console.log(" ".repeat(10));
   console.log(`sorting the array ... => ` + JSON.stringify(arr));
 };
+
+// * bubble Sort with for loop
 
 const bubbleSort = (array) => {
   visualize(array);
@@ -21,6 +25,8 @@ const bubbleSort = (array) => {
 
   return array;
 };
+
+// * bubble Sort with for loop and while loop
 
 const bubbleSort_2 = (array) => {
   while (true) {
