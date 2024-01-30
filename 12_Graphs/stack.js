@@ -1,5 +1,7 @@
 /** @format */
 
+// * Stack with => | push() | pop() | peek() | isEmpty() | isFull() | methods
+
 class Stack {
   constructor() {
     this.maxSize = 100;
