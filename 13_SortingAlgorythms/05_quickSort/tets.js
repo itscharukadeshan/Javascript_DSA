@@ -2,7 +2,7 @@
 
 const { quickSort } = require("./quickSort");
 
-const unSortedArray = [4, 3, 2, 10, 12, 1, 5, 6];
+const unSortedArray = [20, 13, 3, 2, 10, 1, 5, 6];
 
 const result = quickSort(unSortedArray);
 
